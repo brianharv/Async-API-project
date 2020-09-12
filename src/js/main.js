@@ -10,25 +10,18 @@ function clearFields() {
 }
 
 function getElements(response) {
-  let amount = $("#userAmount").val();
-  //if ($("#currency-select option:selected").val() === 1) {
-    $("#currency-output").text(`The value of ${amount} in Australian Dollars is AUD ${amount * response.conversion_rates.AUD}`);
-    
-  //} else {
-    console.log(`${response.conversion_rates.AUD}`);
-    console.log(`${amount}`);
- // }
+  $("showOutput").text(`${response}`);
+  
 }
-
-
+// UI Logic
 $(document).ready(function() {
-  $("#input-amount").submit(function(event) {
-    event.preventDefault();
-    let amount = $("#userAmount").val();
-    ExchangeService.getCurrency(amount)
-      .then(function(response) {
-        getElements(response);   
-      });
+  $("#confirm").click(function() {
+   // let amount = $("#userAmount").val();
+    //let currency = $("#currency-select option:selected").val(); 
     clearFields();  
+    ExchangeService.getCurrency()
+      .then(function(response) {
+        getElements(response); 
+      });
   });
 });
