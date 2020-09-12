@@ -5,27 +5,29 @@
 </head>
 <body>
   <div class="container">
+    <h2>Welcome ExchangeUSD</h2>
     <div class="row">
       <div class="col-md-8">
         <label for="target-currency">Select a Currency to Convert To</label>
 
         <select name="currency" id="currency-select">
+          <option value="sel">Select One</option>
           <option value="aud">AUD - Australian Dollar</option>
           <option value="bgn">BGN - Bulgarian Lev</option>
           <option value="cad">CAD - Canadian Dollar</option>
           <option value="eur">EUR - Euro</option>
           <option value="gbp">GBP - UK Pound Sterling</option>
         </select>
-      </div>  
-    </div>
-      <div class="row"></div>
+      </div>
+    </div>    
+    <div class="row">
         <div class="col-md-8">
           <form id="input-amount">
             <label for="userAmount">Enter Currency Amount:</label><br>
             <input type="text" id="userAmount" name="userAmount"><br>
             <button type="button" class="btn btn-primary" id="confirm">Submit</button>
         </div>
-      </div>  
+    </div>  
     <div class="row">
       <div class="col-md-8" id="form-output">
 
