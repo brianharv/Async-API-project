@@ -11,12 +11,12 @@
         <label for="target-currency">Select a Currency to Convert To</label>
 
         <select name="currency" id="currency-select">
-          <option value="sel">Select One</option>
-          <option value="aud">AUD - Australian Dollar</option>
-          <option value="bgn">BGN - Bulgarian Lev</option>
-          <option value="cad">CAD - Canadian Dollar</option>
-          <option value="eur">EUR - Euro</option>
-          <option value="gbp">GBP - UK Pound Sterling</option>
+          <option value="0">Select One</option>
+          <option value="1">AUD - Australian Dollar</option>
+          <option value="2">BGN - Bulgarian Lev</option>
+          <option value="3">CAD - Canadian Dollar</option>
+          <option value="4">EUR - Euro</option>
+          <option value="5">GBP - UK Pound Sterling</option>
         </select>
       </div>
     </div>    
@@ -25,11 +25,11 @@
           <form id="input-amount">
             <label for="userAmount">Enter Currency Amount:</label><br>
             <input type="text" id="userAmount" name="userAmount"><br>
-            <button type="button" class="btn btn-primary" id="confirm">Submit</button>
+            <button type="button" id="confirm" class="btn btn-primary">Submit</button>
         </div>
     </div>  
     <div class="row">
-      <div class="col-md-8" id="form-output">
+      <div class="col-md-8" id="currency-output">
 
       </div>
     </div>  
