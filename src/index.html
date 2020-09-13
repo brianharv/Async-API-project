@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Currency Exchange</title>
+  <title>ExchangeUSD</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid"></div>
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.exchangerate-api.com/">ExchangeRate-API</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.expedia.com/?pwaLob=wizard-hotel-pwa-v2">Expedia</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.americanexpress.com/en-za/network/benefits/travel/travel-insurance.html/">American Express Travel Insurance</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    
+    </nav> 
+  </div>  
+  <div class="container-fluid">
     <h2>Welcome ExchangeUSD</h2>
+    <h4>Travel with confidence</h4>
     <div class="row">
       <div class="col-md-8">
         <label for="currency-select">Select a Currency to Convert To</label>
@@ -18,22 +43,25 @@
           <option value="4">EUR - Euro</option>
           <option value="5">GBP - UK Pound Sterling</option>
         </select>
-      </div>
-    </div>    
-    <div class="row">
-        <div class="col-md-8">
+      </div>   
+        <div class="col-md-5">
           <form id="input-amount">
-            <label for="userAmount">Enter Currency Amount:</label><br>
-            <input type="text" id="userAmount"><br>
-            <button id="confirm" class="btn btn-primary">Submit</button>
-          </form>  
+            <label for="userAmount">Enter Currency Amount:</label>
+            <input type="text" id="userAmount" name="userAmount"><br>
+            <button type="button" id="confirm" class="btn btn-primary">Submit</button>
+            <button id="reset" class="btn btn-info">Reset</button>  
         </div>
     </div>  
-    <div class="row">
-      <div id="showOutput">
+    <div class="row2">
+      <div class="col-md-12" id="currency-output">
 
       </div>
     </div>  
+    <div class="row3">
+      <div class="col-md-12" id="showError">
+      
+      </div>
+    </div> 
   </div>
 </body>
 </html>
