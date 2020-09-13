@@ -12,6 +12,7 @@
 
 body {
   background-image: url('../assets/img/background3.jpg');
+  background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -48,6 +49,4 @@ label {
   margin-top: 100px;
   font-size: 2rem;
   color: black;
-  background-color: snow;
-  background-blend-mode: soft-light;
 }
