@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/styles.css';
 import ExchangeService from './exchange.js';
 
+
 function clearFields() {
   $("#reset").click(function() { 
     $("#userAmount").val(" ");
@@ -30,13 +31,12 @@ function getElements(response) {
   }  
 }
 
-
 $(document).ready(function() {
   $("#confirm").click(function() {
     ExchangeService.getCurrency()
       .then(function(response) {
         getElements(response);
       }); 
-    clearFields();  
+    clearFields(); 
   });
 });

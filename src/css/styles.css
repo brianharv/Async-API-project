@@ -1,0 +1,50 @@
+.container-fluid {
+  margin: 25px;
+  padding: 20px;
+  color: azure;
+}
+
+.navbar {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  position: sticky;
+}
+
+body {
+  background-image: url('../assets/img/background3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: whitesmoke;
+  padding: 20px;
+  height: 1300px;
+}
+
+h2 {
+  place-content: center;
+  font-size: 4.5rem;
+}
+
+h4 {
+  font-weight: lighter;
+}
+
+button {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+label {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.row {
+  margin-top: 50px;
+}
+.row2, .row3 {
+  margin-top: 200px;
+  margin-left: 10%;
+  font-size: 2rem;
+  color: black;
+}
