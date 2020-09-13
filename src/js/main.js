@@ -14,15 +14,15 @@ function clearFields() {
 function getElements(response) {
   let amount = $("#userAmount").val();
   if ($("#currency-select option:selected").val() == "1") {
-    $("#currency-output").text(`The value of ${amount} USD in Australian Dollars is AUD ${amount * response.conversion_rates.AUD}`);
+    $("#currency-output").text(`The value of ${amount} USD in Australian Dollars is AUD ${(amount * response.conversion_rates.AUD).toFixed(2)}`);
   } else if ($("#currency-select option:selected").val() == "2") {
-    $("#currency-output").text(`The value of ${amount} USD in Bulgarian Lev is BGN ${amount * response.conversion_rates.BGN}`);
+    $("#currency-output").text(`The value of ${amount} USD in Bulgarian Lev is BGN ${(amount * response.conversion_rates.BGN).toFixed(2)}`);
   } else if ($("#currency-select option:selected").val() == "3") {
-    $("#currency-output").text(`The value of ${amount} USD in Canadian Dollars is CAD ${amount * response.conversion_rates.CAD}`);
+    $("#currency-output").text(`The value of ${amount} USD in Canadian Dollars is CAD ${(amount * response.conversion_rates.CAD).toFixed(2)}`);
   } else if ($("#currency-select option:selected").val() == "4") {
-    $("#currency-output").text(`The value of ${amount} USD in Euros is EUR ${amount * response.conversion_rates.EUR}`);
+    $("#currency-output").text(`The value of ${amount} USD in Euros is EUR ${(amount * response.conversion_rates.EUR).toFixed(2)}`);
   } else if ($("#currency-select option:selected").val() == "5") {
-    $("#currency-output").text(`The value of ${amount} USD in Pounds Sterling is GBP ${amount * response.conversion_rates.GBP}`);
+    $("#currency-output").text(`The value of ${amount} USD in Pounds Sterling is GBP ${(amount * response.conversion_rates.GBP).toFixed(2)}`);
   } else if (amount == "0" || $("#currency-select option:selected").val() == "0") {
     $("#showError").text("Please enter a value above 0 and select a currency from the dropdown box");
   } else {
